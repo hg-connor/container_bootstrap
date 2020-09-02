@@ -18,14 +18,10 @@ chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # Pull from repo if it is already present, otherwise clone
-if [ -d "/hemme/website" ]; then
-	cd /hemme/website
-	git pull
-else
-	mkdir /hemme
-	cd /hemme
-	git clone https://github.com/hg-connor/website.git
-fi
+mkdir /hemme
+cd /hemme
+git clone https://github.com/hg-connor/website.git
+git pull
 
 cd /hemme/website/docker/behind_elb
 
