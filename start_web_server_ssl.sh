@@ -21,6 +21,8 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 mkdir /hemme
 cd /hemme
 git clone https://github.com/hg-connor/website.git
+
+cd /hemme/website
 git pull
 
 cd /hemme/website/docker/pure_ssl

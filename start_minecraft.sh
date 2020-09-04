@@ -21,6 +21,8 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 mkdir /hemme
 cd /hemme
 git clone https://github.com/hg-connor/minecraft_server.git
+
+cd /hemme/minecraft_server
 git pull
 
 cd /hemme/minecraft_server
